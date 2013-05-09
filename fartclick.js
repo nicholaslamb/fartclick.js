@@ -39,6 +39,7 @@ var oggs = [
         prefix = ogg_prefix;
     }
     $(this).click(function(event) {
+        var rand = Math.floor(Math.random() * audio.length);
         player.src = prefix + audio[rand];
         player.play();
     });
